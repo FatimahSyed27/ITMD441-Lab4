@@ -1,1 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFD700; /* Sunrise background color */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#location-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#result-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#error-message {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
 
