@@ -65,5 +65,18 @@ function showError(message) {
     clearDataFields();
 }
 
+// Update display with fetched data
+function updateDisplay(day, data) {
+    for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+            const element = document.getElementById(`${day}${capitalizeFirstLetter(key)}`);
+            if (element) {
+                element.querySelector('.data-content').textContent = data[key] || 'Not available';
+            }
+        }
+    }
+}
+
+
 
 
